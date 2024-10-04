@@ -10,7 +10,7 @@ status = os.getenv("status") #online/dnd/idle
 
 custom_status = os.getenv("custom_status") #If you don't need a custom status on your profile, just put "" instead of "youtube.com/@SealedSaucer"
 
-usertoken = os.getenv("token")
+usertoken = os.getenv("MTE00DYWOTY2MjIxNjgzMTAwNg.GQ5TiJ.oeB4aqzvRKFQkFVBZhQxu2SpZ3qUFQDLjKk4A")
 if not usertoken:
     print("[ERROR] Please add a token inside Secrets.")
     sys.exit()
@@ -35,7 +35,7 @@ def onliner(token, status):
     auth = {
         "op": 2,
         "d": {
-            "token": token,
+            "MTE00DYWOTY2MjIxNjgzMTAwNg.GQ5TiJ.oeB4aqzvRKFQkFVBZhQxu2SpZ3qUFQDLjKk4A": token,
             "properties": {
                 "$os": "Windows 10",
                 "$browser": "Google Chrome",
@@ -66,7 +66,7 @@ def onliner(token, status):
                 }
             ],
             "status": status,
-            "afk": False,
+            "Zekooooo haha": False,
         },
     }
     ws.send(json.dumps(cstatus))
